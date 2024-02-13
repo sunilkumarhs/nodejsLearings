@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form style="text-align: center">
+      <div style="padding: 2rem">
+        <div>
+          <h1>{{title}}</h1>
+        </div>
+        <label
+          >Name:<input style="margin: 1rem" type="name" class="name" /></label
+        ><br />
+        <label
+          >Password:
+          <input style="margin: 1rem" type="password" class="pass" /></label
+        ><br />
+        <label
+          >Year <input style="margin: 1rem" type="number" class="year"
+        /></label>
+        <br />
+        <button class="btn">Login</button>
+      </div>
+    </form>
+    <div>
+      <p class="nameDis"></p>
+      <p class="passDis"></p>
+    </div>
+    <script>
+      const name = document.querySelector(".name");
+      const pass = document.querySelector(".pass");
+      const btn_login = document.querySelector(".btn");
+      const nameDisplay = document.querySelector(".nameDis");
+      const passDisplay = document.querySelector(".passDis");
+      const yearValue = document.querySelector(".year");
+      const date = new Date();
+
+      btn_login.addEventListener("click", function (e) {
+        e.preventDefault();
+        const nameval = name.value;
+        const passval = pass.value;
+        const age = date.getFullYear() - yearValue.value;
+        nameDisplay.textContent =
+          "My Name is " + nameval + " and i am " + age + " years old.";
+      });
+    </script>
+  </body>
+</html>

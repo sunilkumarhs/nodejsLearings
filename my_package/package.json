@@ -1,0 +1,22 @@
+{
+  "name": "greeting",
+  "version": "1.0.0",
+  "description": "greeting codeevolution package",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "nodemon": "nodemon index.js"
+  },
+  "keywords": [
+    "greeting",
+    "codeevolution"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "upper-case": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
