@@ -1,0 +1,22 @@
+{
+  "name": "nodejslibrary",
+  "version": "1.0.0",
+  "description": "Complete guide of node.js",
+  "main": "httpPage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon httpPage"
+  },
+  "keywords": [
+    "http",
+    "route",
+    "server",
+    "req",
+    "res"
+  ],
+  "author": "SunilKumarHS",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
