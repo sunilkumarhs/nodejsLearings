@@ -8,14 +8,7 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-header__nav">
-            <ul class="main-header-item-list">
-                <li class="main-header-item"><a class="active" href="/">Shop</a></li>
-                <li class="main-header-item"><a href="admin/add-product">Add Product</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('include/header.ejs') %>
     <main>
         <div class="main-section">
             <h1 class="main-section-heading">Books Container</h1>
@@ -25,7 +18,7 @@
             <% for(let product of prds) { %>
             <div class="card prd-item">
                 <header class="card__header">
-                    <h1 class="prd__title"><%= product.productTitle %></h1>
+                    <h1 class="prd__title"><%= product.title %></h1>
                 </header>
                 <div class="card__img">
                     <img class="img__dis" src="https://img.etimg.com/photo/msid-102177218,imgsize-235452/YouCan%2CbyGeorgeMatthewAdams.jpg" alt="BookPhoto"/>
